@@ -5,9 +5,11 @@
 		<style>
             body{
 				margin:0px;
-				padding:0px;
+				padding-left:10%;
+				padding-right:10%;
 				background-color: rgb(0, 112, 0);
 				color: white;
+				font-size: 20px;
 			}
 			
 			header{
@@ -37,7 +39,21 @@
 				font-style: bold;
 				border: 7px solid white;
 			}
-			}	
+			.column{
+				float:left;
+				width: 30%;
+				padding: 15px;
+			}
+			.row:after {
+    		content: "";
+    		display: table;
+    		clear: both;
+    		}
+    		@media screen and (max-width:600px) {
+    		.column {
+    		width: 100%;
+        		}
+    		}
 		</style>
     </head>
     <body>
@@ -52,7 +68,7 @@
 
             <section style="background-color: rgb(0, 112, 0)">
                     <center>
-                    <iframe width="911" height="482" src="https://youtu.be/WYUQCsZj8PQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="715" height="402" src="https://www.youtube.com/embed/WYUQCsZj8PQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </center>
                     </section>
                     <p>
@@ -64,10 +80,30 @@
                     </menu>
             
                     <menu style="background-image: url(https://www.digitalmusicnews.com/wp-content/uploads/2019/07/spotify_premium_family.png)">
-                        <h1>PRODUK/SERVICE</h1>
+                        <h1>PRODUK/SERVICE</h1>	
                     </menu>
                     
                     <menu style="background-image: url(https://image.freepik.com/free-vector/abstract-background-with-spotify-logo_52683-26645.jpg)">
                         <h1>CONTACT US</h1>
+                    </menu>
+                    <menu>
+                        <h1>ABOUT</h1>
+                        <div class="row">
+								<div class="column">
+								  <h2>Aplikasi Spotfy</h2>
+								  <p>Spotify adalah layanan streaming musik digital, podcast, dan video yang memberimu akses ke jutaan lagu dan konten lain dari artis di seluruh dunia. Fungsi dasar seperti memutar musik tidak berbayar, tapi kamu juga bisa memilih untuk mengupgrade ke Spotify Premium.</p>
+								</div>
+								
+								<div class="column">
+								  <h2>Spotify Premium</h2>
+								  <p>Harga dari layanan Premium tersebut adalah Rp 49.990 per bulan. Beberapa fitur yang "terbuka" ketika pengguna berlangganan Spotify Premium adalah mendengarkan musik secara offline (download lagu), memainkan semua track atau musik yang ada, hingga mendengarkan musik dengan kualitas audio paling tinggi.</p>
+								</div>
+								
+								<div class="column">
+								  <h2>Podcast Spotify</h2>
+								  <p>Podcast merupakan program episode yang tersedia di internet. Podcast biasanya berisi rekaman asli audio dari sebuah siaran televisi atau program radio. Untuk mendengarkan podcast tersedia sebuah platform antara lain, iTunes, Soundcloud and Spotify.</p>
+								</div>
+							</div>
+							</menu>
                     </menu>        
 </html>
